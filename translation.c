@@ -26,34 +26,34 @@ void display() {
       glVertex2f(-0.3f,  0.3f);
    glEnd();
  
-   glTranslatef(0.1f, -0.7f, 0.0f); // Translate right and down
-   glBegin(GL_QUADS);               // Each set of 4 vertices form a quad
-      glColor3f(0.0f, 1.0f, 0.0f); // Green
-      glVertex2f(-0.3f, -0.3f);
-      glVertex2f( 0.3f, -0.3f);
-      glVertex2f( 0.3f,  0.3f);
-      glVertex2f(-0.3f,  0.3f);
-   glEnd();
+   // glTranslatef(0.1f, -0.7f, 0.0f); // Translate right and down
+   // glBegin(GL_QUADS);               // Each set of 4 vertices form a quad
+   //    glColor3f(0.0f, 1.0f, 0.0f); // Green
+   //    glVertex2f(-0.3f, -0.3f);
+   //    glVertex2f( 0.3f, -0.3f);
+   //    glVertex2f( 0.3f,  0.3f);
+   //    glVertex2f(-0.3f,  0.3f);
+   // glEnd();
  
-   glTranslatef(-0.3f, -0.2f, 0.0f); // Translate left and down
-   glBegin(GL_QUADS);                // Each set of 4 vertices form a quad
-      glColor3f(0.2f, 0.2f, 0.2f); // Dark Gray
-      glVertex2f(-0.2f, -0.2f);
-      glColor3f(1.0f, 1.0f, 1.0f); // White
-      glVertex2f( 0.2f, -0.2f);
-      glColor3f(0.2f, 0.2f, 0.2f); // Dark Gray
-      glVertex2f( 0.2f,  0.2f);
-      glColor3f(1.0f, 1.0f, 1.0f); // White
-      glVertex2f(-0.2f,  0.2f);
-   glEnd();
+   // glTranslatef(-0.3f, -0.2f, 0.0f); // Translate left and down
+   // glBegin(GL_QUADS);                // Each set of 4 vertices form a quad
+   //    glColor3f(0.2f, 0.2f, 0.2f); // Dark Gray
+   //    glVertex2f(-0.2f, -0.2f);
+   //    glColor3f(1.0f, 1.0f, 1.0f); // White
+   //    glVertex2f( 0.2f, -0.2f);
+   //    glColor3f(0.2f, 0.2f, 0.2f); // Dark Gray
+   //    glVertex2f( 0.2f,  0.2f);
+   //    glColor3f(1.0f, 1.0f, 1.0f); // White
+   //    glVertex2f(-0.2f,  0.2f);
+   // glEnd();
  
-   glTranslatef(1.1f, 0.2f, 0.0f); // Translate right and up
-   glBegin(GL_TRIANGLES);          // Each set of 3 vertices form a triangle
-      glColor3f(0.0f, 0.0f, 1.0f); // Blue
-      glVertex2f(-0.3f, -0.2f);
-      glVertex2f( 0.3f, -0.2f);
-      glVertex2f( 0.0f,  0.3f);
-   glEnd();
+   // glTranslatef(1.1f, 0.2f, 0.0f); // Translate right and up
+   // glBegin(GL_TRIANGLES);          // Each set of 3 vertices form a triangle
+   //    glColor3f(0.0f, 0.0f, 1.0f); // Blue
+   //    glVertex2f(-0.3f, -0.2f);
+   //    glVertex2f( 0.3f, -0.2f);
+   //    glVertex2f( 0.0f,  0.3f);
+   // glEnd();
  
    glFlush();   // Render now
 }

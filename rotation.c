@@ -17,7 +17,6 @@ void display() {
    glMatrixMode(GL_MODELVIEW);      // To operate on Model-View matrix
    glLoadIdentity();                // Reset the model-view matrix
  
-   glTranslatef(0.2f, -0.3f, 0.0f);     // Translate right and down
    glRotatef(180.0f, 0.0f, 0.0f, 1.0f); // Rotate 180 degree
       glBegin(GL_TRIANGLES);               // Each set of 3 vertices form a triangle
       glColor3f(1.0f, 0.0f, 0.0f); // Red
@@ -26,18 +25,6 @@ void display() {
       glVertex2f( 0.3f, -0.2f);
       glColor3f(0.0f, 0.0f, 1.0f); // Blue
       glVertex2f( 0.0f,  0.3f);
-   glEnd();
- 
-   glRotatef(-180.0f, 0.0f, 0.0f, 1.0f); // Undo previous rotate
-   glTranslatef(-0.1f, 1.0f, 0.0f);      // Translate right and down
-   glBegin(GL_POLYGON);                  // The vertices form one closed polygon
-      glColor3f(1.0f, 1.0f, 0.0f); // Yellow
-      glVertex2f(-0.1f, -0.2f);
-      glVertex2f( 0.1f, -0.2f);
-      glVertex2f( 0.2f,  0.0f);
-      glVertex2f( 0.1f,  0.2f);
-      glVertex2f(-0.1f,  0.2f);
-      glVertex2f(-0.2f,  0.0f);
    glEnd();
  
    glFlush();   // Render now

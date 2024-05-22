@@ -16,18 +16,9 @@ void display() {
    glClear(GL_COLOR_BUFFER_BIT);    // Clear the color buffer
    glMatrixMode(GL_MODELVIEW);      // To operate on Model-View matrix
    glLoadIdentity();                // Reset the model-view matrix
-
-   glBegin(GL_QUADS);               // Each set of 4 vertices form a quad
-      glColor3f(1.0f, 0.0f, 0.0f); // Red
-      glVertex2f(-0.8f, 0.1f);     // Define vertices in counter-clockwise (CCW) order
-      glVertex2f(-0.2f, 0.1f);     //  so that the normal (front-face) is facing you
-      glVertex2f(-0.2f, 0.7f);
-      glVertex2f(-0.8f, 0.7f);
-   glEnd();
  
-      
+   glScalef(2,2,2); 
    glBegin(GL_QUADS);               // Each set of 4 vertices form a quad
-      glScalef(10,10,10);
       glColor3f(0.0f, 1.0f, 0.0f); // Green
       glVertex2f(-0.7f, -0.6f);
       glVertex2f(-0.1f, -0.6f);
